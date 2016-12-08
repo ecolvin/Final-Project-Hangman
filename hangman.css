@@ -1,0 +1,17 @@
+#wordReveal{
+  font-weight: bold;
+  font-size: 200%;
+}
+
+#image{
+  height: 200px;
+  width: 200px;
+}
+
+#result{
+  font-size: 250%;
+}
+
+.letter{
+  width: 35px;
+}

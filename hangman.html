@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- BOOTSTRAP (style only)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="hangman.css"/>
+    <title>Hangman</title>
+    <script type="text/javascript" src="hangman.js"></script>
+  </head>
+  <body lang="en-US">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="http://www.passporttoenglish.com/Beginning-English/Lesson2/hangman0.gif" id="image" alt="Hangman Stand">
+        </div>
+        <div class="col-sm-5">
+          <span id="result"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <span id="wordReveal"></span>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="col-sm-5">
+          <button type="button" class="btn btn-default" id="a" style="width:35px" onclick="guess(this.id);">A</button>
+          <button type="button" class="btn btn-default" id="b" style="width:35px" onclick="guess(this.id);">B</button>
+          <button type="button" class="btn btn-default" id="c" style="width:35px" onclick="guess(this.id);">C</button>
+          <button type="button" class="btn btn-default" id="d" style="width:35px" onclick="guess(this.id);">D</button>
+          <button type="button" class="btn btn-default" id="e" style="width:35px" onclick="guess(this.id);">E</button>
+          <button type="button" class="btn btn-default" id="f" style="width:35px" onclick="guess(this.id);">F</button>
+          <button type="button" class="btn btn-default" id="g" style="width:35px" onclick="guess(this.id);">G</button>
+          <button type="button" class="btn btn-default" id="h" style="width:35px" onclick="guess(this.id);">H</button>
+          <button type="button" class="btn btn-default" id="i" style="width:35px" onclick="guess(this.id);">I</button>
+          <button type="button" class="btn btn-default" id="j" style="width:35px" onclick="guess(this.id);">J</button>
+          <button type="button" class="btn btn-default" id="k" style="width:35px" onclick="guess(this.id);">K</button>
+          <button type="button" class="btn btn-default" id="l" style="width:35px" onclick="guess(this.id);">L</button>
+          <button type="button" class="btn btn-default" id="m" style="width:35px" onclick="guess(this.id);">M</button>
+        </div>
+        <div class="col-sm-4">
+          <div class="input-group">
+            <input type="text" id="wordInput" class="form-control"
+                   placeholder="Guess the word.">
+            <span class="input-group-btn">
+              <button class="btn btn-default" id="string" type="button" onclick="guess(this.id);">
+                Guess
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <button type="button" class="btn btn-default" id="n" style="width:35px" onclick="guess(this.id);">N</button>
+          <button type="button" class="btn btn-default" id="o" style="width:35px" onclick="guess(this.id);">O</button>
+          <button type="button" class="btn btn-default" id="p" style="width:35px" onclick="guess(this.id);">P</button>
+          <button type="button" class="btn btn-default" id="q" style="width:35px" onclick="guess(this.id);">Q</button>
+          <button type="button" class="btn btn-default" id="r" style="width:35px" onclick="guess(this.id);">R</button>
+          <button type="button" class="btn btn-default" id="s" style="width:35px" onclick="guess(this.id);">S</button>
+          <button type="button" class="btn btn-default" id="t" style="width:35px" onclick="guess(this.id);">T</button>
+          <button type="button" class="btn btn-default" id="u" style="width:35px" onclick="guess(this.id);">U</button>
+          <button type="button" class="btn btn-default" id="v" style="width:35px" onclick="guess(this.id);">V</button>
+          <button type="button" class="btn btn-default" id="w" style="width:35px" onclick="guess(this.id);">W</button>
+          <button type="button" class="btn btn-default" id="x" style="width:35px" onclick="guess(this.id);">X</button>
+          <button type="button" class="btn btn-default" id="y" style="width:35px" onclick="guess(this.id);">Y</button>
+          <button type="button" class="btn btn-default" id="z" style="width:35px" onclick="guess(this.id);">Z</button>
+        </div>
+      </div>
+      <div class="row">
+        <button type="button" class="btn btn-default" onclick="goBack();">Go Back</button>
+      </div>
+    </div>
+  </body>
+</html>
