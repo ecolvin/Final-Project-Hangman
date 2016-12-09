@@ -201,28 +201,36 @@ function updateWrong()
   {
     case 0:
       document.getElementById("image").src = "http://www.passporttoenglish.com/Beginning-English/Lesson2/hangman0.gif";
+      document.getElementById("image").alt = "0 Incorrect";
       break;
     case 1:
       document.getElementById("image").src = "http://www.passporttoenglish.com/Beginning-English/Lesson2/hangman1.gif";
+      document.getElementById("image").alt = "1 Incorrect";
       break;
     case 2:
       document.getElementById("image").src = "http://www.passporttoenglish.com/Beginning-English/Lesson2/hangman2.gif";
+      document.getElementById("image").alt = "2 Incorrect";
       break;
     case 3:
       document.getElementById("image").src = "http://www.passporttoenglish.com/Beginning-English/Lesson2/hangman3.gif";
+      document.getElementById("image").alt = "3 Incorrect";
       break;
     case 4:
       document.getElementById("image").src = "http://www.passporttoenglish.com/Beginning-English/Lesson2/hangman4.gif";
+      document.getElementById("image").alt = "4 Incorrect";
       break;
     case 5:
       document.getElementById("image").src = "http://www.passporttoenglish.com/Beginning-English/Lesson2/hangman5.gif";
+      document.getElementById("image").alt = "5 Incorrect";
       break;
     case 6:
       document.getElementById("image").src = "http://www.passporttoenglish.com/Beginning-English/Lesson2/hangman6.gif";
+      document.getElementById("image").alt = "6 Incorrect";
       youLose();
       break;
     default:
       document.getElementById("image").src = "http://www.passporttoenglish.com/Beginning-English/Lesson2/hangman6.gif";
+      document.getElementById("image").alt = "" + wrongGuesses + " Incorrect";
   }
 }
 
